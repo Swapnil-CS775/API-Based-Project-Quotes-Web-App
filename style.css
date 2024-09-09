@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 46, 61);
+}
+.container{
+    height: 480px;
+    width: 100vh;
+    background-color: rgb(74, 156, 253);
+    border-radius: 2px;
+    box-shadow: 15px 15px 20px rgb(0 0 0 / 82%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.inner-container{
+    box-sizing: border-box;
+    height: 60%;
+    width: 70%;
+    background-color: white;
+    border-radius: 2px 2px 0px 0px;
+    box-shadow: 5px 5px 11px rgba(18, 16, 16, 0.653);
+    padding: 15px;
+    
+}
+
+.new-quotes{
+    width: 70%;
+}
+.new-quotes-btn{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+   font-weight: bolder;
+   background-color: #006ECF;
+   border: none;
+   border-radius: 0px 0px 2px 2px;
+   box-shadow: 5px 5px 11px rgba(18, 16, 16, 0.653);
+   font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.icon1{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.additional-icons {
+    display: none; /* Hide additional icons by default */
+    position: absolute;
+    bottom: 100%; /* Position above the .icon1 div */
+    right: 0; /* Align to the right */
+    background-color: white; /* Optional: Add background color */
+    border: 1px solid #ddd; /* Optional: Add border */
+    border-radius: 5px; /* Optional: Add border radius */
+    padding: 10px; /* Optional: Add padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.icon1:hover .additional-icons {
+    display: flex;
+    gap: 15px; /* Optional: Add space between icons */
+}
+
+.additional-icons img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+
+
+.img{
+    height: 30px;
+    opacity: 0.4;
+}
+
+.quote {
+    position: relative;
+    font-size: 19px; /* Adjust as needed */
+    left: 5%;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.author {
+    font-size: 15px; /* Adjust as needed */
+    color: #888; /* Adjust as needed */
+    font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.my-content img{
+    height: 45px;
+}
+
+.my-content{
+    padding: 20px;
+}
+
+.margin{
+    margin-bottom: 30px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icon1 img{
+    cursor: pointer;
+}
+
+@media (max-width: 780px) {
+    .inner-container{
+        width: 78%;
+    }
+    .my-content{
+        padding: 0px;
+    }
+    .margin{
+        margin-bottom: 13px;
+    }
+}
